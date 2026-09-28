@@ -1,62 +1,146 @@
-# OutdoorScan
+<div align="center">
 
-Product-oriented web application experiment focused on building a polished, responsive interface with a modern React stack.
+# OUTDOORSCAN
 
-## Overview
+### Product engineering · React · TypeScript · Modern UI
 
-OutdoorScan is a technical exploration of product engineering on the web, combining a React application with a structured component system, client-side data handling and a modern Vite-based development workflow.
+<p>
+  <img src="https://img.shields.io/badge/React-19-111827?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-5-111827?style=for-the-badge&logo=typescript&logoColor=3178C6" />
+  <img src="https://img.shields.io/badge/Vite-Frontend-111827?style=for-the-badge&logo=vite&logoColor=646CFF" />
+  <img src="https://img.shields.io/badge/Tailwind-CSS-111827?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" />
+</p>
 
-The repository is built as a TypeScript application and uses a broad UI component layer for interactive product interfaces.
+**A product-oriented web application experiment built around a modern, component-driven frontend stack.**
 
-## Technology
+</div>
 
-- React 19
-- TypeScript
-- Vite
+---
+
+## ✦ Project
+
+OutdoorScan is a technical exploration of product engineering on the web.
+
+The repository combines:
+
+- React + TypeScript
+- modern Vite tooling
 - Tailwind CSS
-- TanStack Query
-- React Router
-- React Hook Form
-- Zod
-- Radix UI
-- Recharts
-- Supabase JavaScript client
+- reusable UI primitives
+- application data handling
+- forms and validation
+- charts and reporting
+- document/export tooling
 
-## Engineering characteristics
+---
 
-### Modern frontend architecture
-The project uses React with TypeScript and Vite, with path aliases and a dedicated component ecosystem.
+## 🧱 Frontend architecture
+
+~~~text
+┌──────────────────────┐
+│     Product UI       │
+└──────────┬───────────┘
+           │
+┌──────────▼───────────┐
+│   React Components   │
+│     + Radix UI       │
+└──────────┬───────────┘
+           │
+┌──────────▼───────────┐
+│ State / Data / Forms │
+│     Query + Zod      │
+└──────────┬───────────┘
+           │
+┌──────────▼───────────┐
+│ Reporting / Exports  │
+│ Charts / PDF / XLSX  │
+└──────────────────────┘
+~~~
+
+---
+
+## ✨ Engineering characteristics
 
 ### Component-driven UI
-Radix UI primitives are used across interaction patterns such as dialogs, menus, tabs, accordions, popovers, selectors and navigation components.
 
-### Data and forms
-The stack includes TanStack Query for application data handling, React Hook Form for forms and Zod for validation.
+Radix UI primitives cover interaction patterns such as:
 
-### Reporting and exports
-The dependency stack includes Recharts, ExcelJS, XLSX, jsPDF and html2canvas-based tooling for data visualization and document/export workflows.
+**Dialog · Menu · Tabs · Accordion · Popover · Select · Navigation**
 
-## Development
+### Data & state
+
+The stack includes **TanStack Query** for application data handling.
+
+### Forms & validation
+
+**React Hook Form + Zod** provide the form and validation layer.
+
+### Reporting & exports
+
+The dependency stack includes:
+
+- Recharts
+- ExcelJS
+- XLSX
+- jsPDF
+- html2canvas
+
+---
+
+## 🛠️ Stack
+
+| Category | Technologies |
+|---|---|
+| UI | React 19 · Radix UI · Tailwind CSS |
+| Language | TypeScript |
+| Build | Vite |
+| Data | TanStack Query · Supabase JS |
+| Forms | React Hook Form · Zod |
+| Routing | React Router |
+| Charts | Recharts |
+| Export | ExcelJS · XLSX · jsPDF |
+
+---
+
+## 🚀 Development
 
 ~~~bash
 npm install
 npm run dev
+~~~
+
+### Production build
+
+~~~bash
 npm run build
+~~~
+
+### Lint
+
+~~~bash
 npm run lint
 ~~~
 
-## Engineering focus
+---
 
-~~~
-product interface
-      ↓
-component system
-      ↓
-application state
-      ↓
-data + validation
-      ↓
-reporting / exports
+## 🧠 Engineering model
+
+~~~text
+PRODUCT INTERFACE
+       ↓
+COMPONENT SYSTEM
+       ↓
+APPLICATION STATE
+       ↓
+DATA + VALIDATION
+       ↓
+REPORTING / EXPORTS
 ~~~
 
-OutdoorScan is part of my public portfolio as a product-engineering exploration rather than a claim of a finished commercial platform.
+<div align="center">
+
+**Design the interface. Structure the system. Ship the product.**
+
+</div>
+
+> OutdoorScan is presented as a public product-engineering exploration, not as a claim of a finished commercial platform.
